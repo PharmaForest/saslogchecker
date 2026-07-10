@@ -1,0 +1,11 @@
+FileName  Category                                                                                     Hit recorf                      Hit keyword
+--------  --------  ---------------------------------------------------------------------------------------------  -------------------------------
+          NOTE      NOTE: Division by zero detected at (line 6 column 13).                                         Division by zero
+          NOTE      NOTE: Missing values were generated as a result of performing an operation on missing values.  Missing values
+          NOTE      NOTE: Variable y is uninitialized.                                                             is uninitialized
+          WARNING   WARNING: The variable y in the DROP, KEEP, or RENAME list has never been referenced.           WARNING
+          ERROR     ERROR: Libref NOLIB is not assigned.                                                           ERROR
+          ERROR     ERROR: File WORK.C.DATA does not exist.                                                        ERROR,does not exist
+          WARNING   WARNING: The variable name was not found on the input data set.                                WARNING,was not found
+          INFO      INFO: The variable z on data set WORK.C will be overwritten by data set WORK.C.                will be overwritten by data set
+

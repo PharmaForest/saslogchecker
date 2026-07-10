@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_interact_logchk",
+  "source_file": "SASLogChecker/06_macros/interact_logchk.sas",
+  "source_blob_sha": "527bc4b4738d3ca137fbaf95fcb3a74affdb1f2d",
+  "source_commit": "87dbd3619da5df31a50fa17b14d03ccd750fa5db",
+  "notes": "Exercises the macro's log-classification core: ERROR/WARNING/NOTE/INFO categorisation via SUBSTR, PUT(_record,$hex.) rendering, and the author's curated INDEX() keyword list (plain-text arm). Adapted: the interactive 'dm' window/print/viewtable plumbing (GUI-only) is omitted for a headless run; a representative log is materialised inline and read via fileref in its place. Classification logic copied unchanged. 9 lines flagged (2 ERROR, 1 WARNING, 5 NOTE, 1 INFO)."
+}

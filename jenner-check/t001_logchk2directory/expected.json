@@ -1,0 +1,21 @@
+{
+  "_captured_at": "2026-07-10T08:10:13Z",
+  "_captured_run_id": "r_dbbf70fb64cb45f89217de50b403e6a3",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Macro variable LOGOBS = 8",
+    "NOTE: logchk2directory flagged 8 suspicious log line(s).",
+    "NOTE: Read 22 rows from _log_.",
+    "NOTE: PROC PRINT completed: 8 observations printed, 4 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR: DATA",
+    "[JENNER-ERROR",
+    "execution halted"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

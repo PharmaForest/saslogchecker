@@ -1,0 +1,44 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA _null_
+
+NOTE: Writing to fileref sample.log (/tmp/work/r_dbbf70fb64cb45f89217de50b403e6a3/sample.log)
+NOTE: DATA _null_ completed. Output written to fileref sample.log (/tmp/work/r_dbbf70fb64cb45f89217de50b403e6a3/sample.log)
+NOTE: DATA term
+
+
+NOTE: Wrote term (67 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA term
+
+
+NOTE: Read 67 rows from term.
+NOTE: Wrote term (67 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=term
+
+NOTE: 3 duplicate observations were deleted.
+NOTE: Read 67 rows from term.
+NOTE: Wrote term (64 rows, 2 columns).
+NOTE: PROC SORT statement used.
+NOTE: Fileref _LOG_ assigned to sample.log.
+NOTE: DATA log
+
+NOTE: Reading from fileref _log_ (sample.log)
+
+NOTE: Read 22 rows from _log_.
+NOTE: Wrote log (8 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Macro variable LOGOBS = 8
+NOTE: PROC SQL statement used.
+NOTE: logchk2directory flagged 8 suspicious log line(s).
+NOTE: PROC PRINT data=log
+
+NOTE: PROC PRINT completed: 8 observations printed, 4 variables

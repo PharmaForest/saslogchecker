@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_logchk2directory",
+  "source_file": "SASLogChecker/06_macros/logchk2directory.sas",
+  "source_blob_sha": "ecb1b1d7d45bdf7ad57fb93f617f0df38c3a7fb6",
+  "source_commit": "87dbd3619da5df31a50fa17b14d03ccd750fa5db",
+  "notes": "Scans SAS logs for ERROR/WARNING/NOTE/INFO using the macro's verbatim keyword dictionary (incl. Shift-JIS hex literals), PROC SORT NODUPKEY, and the hash-object multidata scan (find/find_next), plus KSCAN/KREVERSE filename extraction. Adapted: a representative log is materialised inline (via DATA _null_ + PUT) and read through a single fileref instead of the macro's Windows folder wildcard; ODS EXCEL output replaced with PROC PRINT. Scan logic copied unchanged. 8 lines flagged."
+}

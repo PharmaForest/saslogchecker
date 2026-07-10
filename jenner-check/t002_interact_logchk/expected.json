@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-10T08:10:13Z",
+  "_captured_run_id": "r_1510adf6cb5c4cf0ae1eed8bfebf3e03",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: interact_logchk summary -- ERROR:2  WARNING:1  NOTE:5  INFO:1 (total 9).",
+    "NOTE: Read 10 rows from tempf.",
+    "NOTE: PROC PRINT completed: 9 observations printed, 4 variables"
+  ],
+  "log_does_not_contain": [
+    "ERROR: DATA",
+    "[JENNER-ERROR",
+    "execution halted"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

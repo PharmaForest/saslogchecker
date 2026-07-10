@@ -1,0 +1,28 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA _null_
+
+NOTE: Writing to fileref log.txt (/tmp/work/r_1510adf6cb5c4cf0ae1eed8bfebf3e03/log.txt)
+NOTE: DATA _null_ completed. Output written to fileref log.txt (/tmp/work/r_1510adf6cb5c4cf0ae1eed8bfebf3e03/log.txt)
+NOTE: Fileref TEMPF assigned to log.txt.
+NOTE: DATA __log
+
+NOTE: Reading from fileref tempf (log.txt)
+
+NOTE: Read 10 rows from tempf.
+NOTE: Wrote __log (9 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Macro variable __OBS = 9
+NOTE: Macro variable __OBS_E = 2
+NOTE: Macro variable __OBS_W = 1
+NOTE: Macro variable __OBS_N = 5
+NOTE: Macro variable __OBS_I = 1
+NOTE: PROC SQL statement used.
+NOTE: Fileref TEMPF cleared.
+NOTE: interact_logchk summary -- ERROR:2  WARNING:1  NOTE:5  INFO:1 (total 9).
+NOTE: PROC PRINT data=__log
+
+NOTE: PROC PRINT completed: 9 observations printed, 4 variables

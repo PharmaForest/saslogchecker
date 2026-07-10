@@ -1,0 +1,12 @@
+Category                                                                                           Text                           Target Keyword  Line
+--------  ---------------------------------------------------------------------------------------------  ---------------------------------------  ----
+ERROR     ERROR: File WORK.X.DATA does not exist.                                                                                                    1
+ERROR     ERROR: Libref NOLIB is not assigned.                                                                                                       2
+WARNING   WARNING: Apparent symbolic reference NAME not resolved.                                                                                    3
+NOTE      NOTE: Missing values were generated as a result of performing an operation on missing values.  Missing values                              4
+NOTE      NOTE: Variable c is uninitialized.                                                             is uninitialized                            5
+NOTE      NOTE: Division by zero detected at (line 6 column 13).                                         Division by zero                            6
+NOTE      NOTE: Character values have been converted to numeric values at (line 3 column 5).             Character values have been converted to     7
+NOTE      NOTE: MERGE statement has more than one data set with repeats of BY values.                    repeats of BY values                        9
+INFO      INFO: The variable y on data set WORK.X will be overwritten by data set WORK.Y.                will be overwritten by data set            10
+
