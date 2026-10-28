@@ -27,7 +27,7 @@ Example Usage:
 
 *//*** HELP END ***/
 
-%macro logchk2directory1(folder = ,out_folder= ,extension = log);
+%macro logchk2directory(folder = ,out_folder= ,extension = log);
 %put NOTE: extension is set &extension.;
 %if %length(&folder) EQ 0 %then %do;
 %put %str(ER)%str(ROR: folder is a mandatory parameter. Please provide the folder reference where target log giles are located.);
