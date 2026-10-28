@@ -2,6 +2,7 @@
 
 Macro Name : logchk2directory
 Authoer: Yutaka Morioka
+Contributors:Dave Kestner
 License : MIT
 Overview:
 Scans all log files (*.log or specified extension) in a
@@ -14,10 +15,8 @@ or UTF-8.
 garbled text and ensure matching regardless of session
 encoding.
 Important Notes:
-- This macro is designed for Windows only.
-The file path delimiter "\" and path handling logic
-(e.g., KSCAN, KREVERSE) assume a Windows environment.
-It will not work as-is on Unix/Linux/MacOS systems.
+- This macro is designed for Windows and Linux .
+
 Parameters:
 folder     = Path to the folder containing log files
 out_folder = Path to the folder for the output Excel file
