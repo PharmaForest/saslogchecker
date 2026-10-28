@@ -27,7 +27,7 @@ Example Usage:
 
 *//*** HELP END ***/
 
-%macro logchk2directory(folder = ,out_folder= ,extension = log);
+%macro logchk2directory1(folder = ,out_folder= ,extension = log);
 %put NOTE: extension is set &extension.;
 %if %length(&folder) EQ 0 %then %do;
 %put %str(ER)%str(ROR: folder is a mandatory parameter. Please provide the folder reference where target log giles are located.);
@@ -38,7 +38,22 @@ Example Usage:
 %end;
 %put NOTE: folder is set &folder;
 %put NOTE: out_folder is set &out_folder;
-filename _log_  "&folder.\*.&extension" ;
+
+/*Change made by Dave Kestner*/
+/*New Macro variable*/
+%if %sysfunc(find(upcase(&sysscp.), WIN)) gt 0 %then %do;
+    %let slash = \;
+%end;
+%else %do;
+    %let slash = /;
+%end;
+/*End of change made by Dave Kestner*/
+
+
+/*Change made by Dave Kestner*/
+/*filename _log_  "&folder.\*.&extension" ;*/
+filename _log_  "&folder.&slash.*.&extension" ; 
+/*End of change made by Dave Kestner*/
 data term;
 length term $400.;
 key=1;
@@ -132,8 +147,11 @@ length fname _fname $200. cate $10. record term $400.  hit $500.;
 		h1.definedata("term");
 		h1.definedone();
 	end;
-	fname=kreverse(kscan(kreverse(_fname),1,"\"));
-	
+    /*Change made by Dave Kestner*/
+	/*fname=kreverse(kscan(kreverse(_fname),1,"\"));*/
+	fname=kreverse(kscan(kreverse(_fname),1,"&slash."));
+	/*End of change made by Dave Kestner*/
+
 	_record = strip(record);
 _record = compress(_record,'0A'X || '0D'X|| '0C'X);
 	if substr(_record, 1 , 5 ) = 'ERROR'     then cate ='ERROR';
@@ -167,7 +185,10 @@ data log;
 	run;
 %end;
 ods excel
-file="&out_folder\LogCheck_Result.xlsx";
+/*Change made by Dave Kestner*/
+/*file="&out_folder\LogCheck_Result.xlsx";*/
+file="&out_folder.&slash.LogCheck_Result.xlsx";
+/*End of change made by Dave Kestner*/
 proc print data=log noobs label;
 run;
 ods excel close;
